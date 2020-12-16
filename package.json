@@ -5,13 +5,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint:ts": "tsc --noEmit",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --coverage"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
-      "pre-push": "test:ci"
+      "pre-push": "lint:ts && test:ci"
     }
   },
   "jest": {
