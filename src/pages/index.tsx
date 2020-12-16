@@ -6,8 +6,9 @@ const Home = () => {
       <Head>
         <title>Nextplate</title>
       </Head>
-
-      <main>Homepage Nextplate</main>
+      <main>
+        <h1>Nextplate</h1>
+      </main>
     </>
   );
 };
