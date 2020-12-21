@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Container, Heading, Text } from "@chakra-ui/react";
 
 const Home = () => {
   return (
@@ -6,9 +7,10 @@ const Home = () => {
       <Head>
         <title>Nextplate</title>
       </Head>
-      <main>
-        <h1>Nextplate</h1>
-      </main>
+      <Container maxW={"3xl"} textAlign={"center"} p={8}>
+        <Heading>Nextplate</Heading>
+        <Text>The opinionated starter for Next.js projects</Text>
+      </Container>
     </>
   );
 };
